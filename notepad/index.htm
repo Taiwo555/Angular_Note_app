@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NoteApp</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, red, purple);
+        }
+        .main{
+            width: 70%;
+            margin: auto;
+            margin-top: 10em;
+        }
+            
+    </style>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+<body ng-app="myNoteApp" ng-controller="myNoteCtrl">
+<div class="main">
+    <textarea style="background-color:gray; color:black; border-radius: 10px; " ng-model="message" cols="80" rows="20" autofocus></textarea>
+
+</div>
+<p align="center">
+<button ng-click="save()" style="width: 100px; background-color: gray;">Save</button>
+<button ng-click="clear()" style="width: 100px; background-color: gray;">Clear</button>
+</p>
+
+
+
+<script src="myNoteApp.js"></script>
+<script src="myNoteCtrl.js"></script>
